@@ -4,3 +4,35 @@
 h1,h2 {
   font-family: 'Arimo', sans-serif;
 }
+
+#container{
+  width: 100%;
+}
+
+header{
+  background-color: #ccc;
+  height: 80px;
+}
+
+.logo{
+  float:left;
+}
+
+.logo h1 {
+  font-size: 2em;
+  margin-left: 100px;
+}
+
+.social {
+  float:right;
+}
+
+#whoami{
+  width: 100%;
+  min-height: 250px;
+  margin: 0 auto;
+}
+
+#introscript{
+  margin: 0 auto;
+}
