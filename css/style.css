@@ -1,9 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Arimo);
+@import url(http://fonts.googleapis.com/css?family=Actor);
+@import url(http://fonts.googleapis.com/css?family=Rosarivo);
 
-
-h1,h2 {
-  font-family: 'Arimo', sans-serif;
+p {
+  font-family: 'Rosarivo', serif;
 }
+
+
+h1,h2,h3,a {
+  font-family: 'Actor', sans-serif;
+}
+
 
 #container{
   width: 100%;
