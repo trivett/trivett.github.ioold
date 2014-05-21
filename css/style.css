@@ -33,12 +33,109 @@ header{
   float:right;
 }
 
-#whoami{
+
+#intro {
+  background-image: url("/images/texture.png");
   width: 100%;
   min-height: 250px;
+  display: block;
+
+}
+#whoami{
+  width: 100%;
   margin: 0 auto;
 }
 
 #introscript{
   margin: 0 auto;
 }
+
+a{
+  text-decoration: none;
+  color:red;
+}
+
+#container{
+  margin:0 auto;
+  padding: 25px;
+}
+
+.content {
+  text-align: center;
+  min-width: 200px;
+  width: 30%;
+  height: 400px;
+  padding: 50px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+#contact{
+  min-width: 400px;
+  text-align: center;
+  height: 300px;
+  width: 90%;
+  display:inline-block;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  background: url(assets/me.jpg) no-repeat;
+  float: left;
+  display: inline-block;
+}
+
+#links{
+  float:right;
+  list-style: none;
+  line-height: 2.5em;
+  margin-right: 20px;
+}
+
+/*Media query for smaller screens*/
+
+@media (max-width: 800px){
+  header {
+    max-height: 150px;
+  }
+  .content {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 60%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    min-width: 400px;
+  }
+  #left{
+    float: none;
+  }
+  #contact{
+    overflow: hidden;
+    text-align: center;
+  }
+  #links{
+    float:right;
+    line-height: 1.5em;
+    margin-right: 5px;
+    overflow: hidden;
+    float: left;
+  }
+  li{
+    display: block;
+    float: left;
+  }
+}
+
+
