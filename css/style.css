@@ -1,19 +1,28 @@
 @import url(http://fonts.googleapis.com/css?family=Actor);
 @import url(http://fonts.googleapis.com/css?family=Rosarivo);
 
-p {
+p, a, li {
   font-family: 'Rosarivo', serif;
+  font-size: 16px;
 }
 
 
-h1,h2,h3,a {
+h1,h2,h3 {
   font-family: 'Actor', sans-serif;
 }
 
-
-#container{
-  width: 100%;
+h1 {
+  font-size: 40px;
 }
+
+h2 {
+  font-size: 24px;
+  margin: 5px;
+}
+
+
+
+/*Header stuff*/
 
 header{
   background-color: #ccc;
@@ -34,21 +43,27 @@ header{
 }
 
 
+/*first section*/
+
+section{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 #intro {
   background-image: url("/images/texture.png");
-  width: 100%;
-  min-height: 250px;
-  display: block;
-
+  padding: 50px;
+  max-width: none;
 }
+
 #whoami{
-  width: 100%;
   margin: 0 auto;
+  max-width: 500px;
+
 }
 
-#introscript{
-  margin: 0 auto;
-}
+
 
 a{
   text-decoration: none;
@@ -68,10 +83,13 @@ a{
   padding: 50px;
   margin: 0 auto;
   display: inline-block;
+  float: left;
 }
 
 
-
+.right{
+  float: right;
+}
 img {
   width: 200px;
   height: auto;
@@ -105,7 +123,7 @@ img {
 
 /*Media query for smaller screens*/
 
-@media (max-width: 800px){
+@media (max-width: 900px){
   header {
     max-height: 150px;
   }
@@ -118,8 +136,9 @@ img {
     margin-top: 0px;
     min-width: 400px;
   }
-  #left{
-    float: none;
+
+  .right {
+    float:none;
   }
   #contact{
     overflow: hidden;
