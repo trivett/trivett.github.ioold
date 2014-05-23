@@ -3,7 +3,7 @@
 
 p, a, li {
   font-family: 'Rosarivo', serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a{
@@ -51,9 +51,10 @@ header{
 }
 
 .social {
-  float:right;
+  float: right;
   margin-right: 75px;
   margin-top: 6px;
+  display: inline-block;
 }
 
 
@@ -63,12 +64,13 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   display: block;
+  margin-bottom: 10px;
 }
 
 #intro, #past {
   background-image: url("/images/texture.png");
   background-color: #F5F7FA;
-  padding: 50px;
+  padding: 25px;
   max-width: 100%;
 }
 
@@ -135,9 +137,25 @@ section h2 {
 
 /*Media query for smaller screens*/
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
   header {
-    max-height: 150px;
+    height: 100px;
+  }
+
+  .logo, .social {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .logo h1 {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
   }
   .content {
     display: block;
@@ -149,11 +167,8 @@ section h2 {
     min-width: 400px;
   }
 
-  .right {
-    float:none;
-  }
 
-  img{
+  .content img{
     max-width: 550px;
   }
 
