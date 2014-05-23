@@ -92,7 +92,7 @@ section h2 {
   text-align: center;
   min-width: 350px;
   width: 30%;
-  height: 400px;
+  /*height: 400px;*/
   padding: 50px;
   margin: 0 auto;
   display: inline-block;
@@ -104,6 +104,10 @@ section h2 {
 .content img {
   max-width: 350px;
   box-shadow: 5px 5px 5px #CCC;
+}
+
+.content p, .content a {
+  font-size: 16px;
 }
 
 
@@ -170,6 +174,9 @@ section h2 {
 
   .content img{
     max-width: 550px;
+  }
+  p, a {
+    font-size: 14px;
   }
 
   #contact{
