@@ -27,6 +27,7 @@ h2 {
 header{
   background-color: #ccc;
   height: 80px;
+  width: 100%;
 }
 
 .logo{
@@ -48,13 +49,19 @@ header{
 section{
   width: 100%;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 100%;
 }
 
 #intro {
   background-image: url("/images/texture.png");
   padding: 50px;
-  max-width: none;
+
+  max-width: 100%;
+}
+
+#intro h2 {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 #whoami{
@@ -77,7 +84,7 @@ a{
 
 .content {
   text-align: center;
-  min-width: 200px;
+  min-width: 350px;
   width: 30%;
   height: 400px;
   padding: 50px;
@@ -91,7 +98,7 @@ a{
   float: right;
 }
 img {
-  width: 200px;
+  width: 350px;
   height: auto;
 }
 
@@ -109,7 +116,7 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 150px;
-  background: url(assets/me.jpg) no-repeat;
+  background: url('/images/me.jpg') no-repeat;
   float: left;
   display: inline-block;
 }
@@ -158,3 +165,13 @@ img {
 }
 
 
+/* Media query for big screens*/
+
+@media (min-width: 1100px){
+
+  .content{
+    margin: 100px 30px;
+  }
+
+
+}
