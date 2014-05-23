@@ -91,7 +91,7 @@ section h2 {
 
 .content {
   text-align: center;
-  min-width: 350px;
+  min-width: 400px;
   width: 30%;
   /*height: 400px;*/
   padding: 50px;
@@ -169,7 +169,6 @@ section h2 {
     width: 60%;
     margin-bottom: 0px;
     margin-top: 0px;
-    min-width: 400px;
   }
 
 
@@ -189,11 +188,6 @@ section h2 {
     line-height: 1.5em;
     margin-right: 5px;
     overflow: hidden;
-    float: left;
-  }
-  li{
-    display: block;
-    float: left;
   }
 }
 
